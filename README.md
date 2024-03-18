@@ -62,6 +62,62 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_aarch64_libarrow12</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_libarrow12" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_libarrow13</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_libarrow13" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_libarrow14</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_libarrow14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_libarrow15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_libarrow15" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_libarrow12</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_libarrow12" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_libarrow13</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_libarrow13" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_libarrow14</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_libarrow14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_libarrow15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_libarrow15" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_libarrow12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
