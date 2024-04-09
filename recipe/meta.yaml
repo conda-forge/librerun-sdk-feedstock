@@ -8,10 +8,6 @@ package:
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/{{ version }}.tar.gz
   sha256: 6cdbc36249e81cce3c28d6ee5f79970e1e49cb46f68e9bd784604c3b32dd823a
-  patches:
-    - 5374.patch
-    - 5375.patch
-    - fixrerun_c_location.patch
 
 build:
   number: 0
