@@ -8,10 +8,6 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_libarrow12:
-        CONFIG: linux_64_libarrow12
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_libarrow13:
         CONFIG: linux_64_libarrow13
         UPLOAD_PACKAGES: 'True'
@@ -24,8 +20,8 @@ jobs:
         CONFIG: linux_64_libarrow15
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_libarrow12:
-        CONFIG: linux_aarch64_libarrow12
+      linux_64_libarrow16:
+        CONFIG: linux_64_libarrow16
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_libarrow13:
@@ -40,8 +36,8 @@ jobs:
         CONFIG: linux_aarch64_libarrow15
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_libarrow12:
-        CONFIG: linux_ppc64le_libarrow12
+      linux_aarch64_libarrow16:
+        CONFIG: linux_aarch64_libarrow16
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_libarrow13:
@@ -54,6 +50,10 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_libarrow15:
         CONFIG: linux_ppc64le_libarrow15
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_ppc64le_libarrow16:
+        CONFIG: linux_ppc64le_libarrow16
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360

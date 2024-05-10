@@ -10,7 +10,7 @@ source:
   sha256: 5b4ebd35c79464a1fecf3078f8d74d8a04624fdf2ed4b2986f9b499d40a7be5d
 
 build:
-  number: 0
+  number: 1
   # Windows does not support shared libraries, let's disable it for now
   skip: true  # [win]
   run_exports:
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - pkg-config
@@ -27,8 +28,6 @@ requirements:
     - {{ compiler('rust') }}
   host:
     - libarrow
-  run:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
   # Ensure that the users always instal the same version if it
   # installs both librerun-sdk (C++) and rerun-sdk (Python)
   run_constrained:
