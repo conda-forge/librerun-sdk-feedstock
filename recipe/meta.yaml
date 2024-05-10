@@ -28,7 +28,6 @@ requirements:
     - {{ compiler('rust') }}
   host:
     - libarrow
-  run:
   # Ensure that the users always instal the same version if it
   # installs both librerun-sdk (C++) and rerun-sdk (Python)
   run_constrained:
