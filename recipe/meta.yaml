@@ -11,8 +11,6 @@ source:
 
 build:
   number: 0
-  # Windows does not support shared libraries, let's disable it for now
-  skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
 
