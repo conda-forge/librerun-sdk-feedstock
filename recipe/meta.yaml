@@ -35,7 +35,7 @@ test:
   commands:
     - test -f ${PREFIX}/include/rerun.hpp  # [unix]
     - test -f ${PREFIX}/lib/librerun_sdk${SHLIB_EXT}  # [unix]
-    - if not exist %LIBRARY_PREFIX%\\include\\rerun.hh exit 1  # [win]
+    - if not exist %LIBRARY_PREFIX%\\include\\rerun.hpp exit 1  # [win]
     - if not exist %LIBRARY_PREFIX%\\lib\\rerun_sdk.lib exit 1  # [win]
     - if not exist %LIBRARY_PREFIX%\\bin\\rerun_sdk.dll exit 1  # [win]
     - cmake-package-check rerun_sdk --targets rerun_sdk
