@@ -173,6 +173,34 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_libarrow16" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>win_64_libarrow13</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow13" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_libarrow14</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_libarrow15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow15" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_libarrow16</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow16" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
