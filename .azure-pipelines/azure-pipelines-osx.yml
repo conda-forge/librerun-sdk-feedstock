@@ -17,8 +17,8 @@ jobs:
       osx_64_libarrow15:
         CONFIG: osx_64_libarrow15
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow16:
-        CONFIG: osx_64_libarrow16
+      osx_64_libarrow16.1:
+        CONFIG: osx_64_libarrow16.1
         UPLOAD_PACKAGES: 'True'
       osx_arm64_libarrow13:
         CONFIG: osx_arm64_libarrow13
@@ -29,8 +29,8 @@ jobs:
       osx_arm64_libarrow15:
         CONFIG: osx_arm64_libarrow15
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_libarrow16:
-        CONFIG: osx_arm64_libarrow16
+      osx_arm64_libarrow16.1:
+        CONFIG: osx_arm64_libarrow16.1
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
