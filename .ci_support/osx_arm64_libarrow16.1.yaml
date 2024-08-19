@@ -17,7 +17,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '16'
+- '15'
 libarrow:
 - '16.1'
 macos_machine:
