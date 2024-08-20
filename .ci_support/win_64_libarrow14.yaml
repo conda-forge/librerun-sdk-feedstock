@@ -12,5 +12,7 @@ libarrow:
 - '14'
 rust_compiler:
 - rust
+rust_compiler_version:
+- 1.76.0
 target_platform:
 - win-64
