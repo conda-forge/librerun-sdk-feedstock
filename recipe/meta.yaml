@@ -24,7 +24,7 @@ requirements:
     - ninja
     - cargo-bundle-licenses
     - {{ compiler('rust') }}
-    - mold  # [unix]
+    - lld  # [osx]
   host:
     - libarrow
   # Ensure that the users always instal the same version if it
