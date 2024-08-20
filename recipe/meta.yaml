@@ -44,6 +44,10 @@ test:
     - cmake-package-check
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - cmake
+    - ninja
+  source_files:
+    - examples/cpp
 
 about:
   home: https://www.rerun.io/
