@@ -24,8 +24,8 @@ cmake ${CMAKE_ARGS} -GNinja .. \
       -DBUILD_SHARED_LIBS:BOOL=ON \
       -DRERUN_ARROW_LINK_SHARED:BOOL=ON \
       -DRERUN_DOWNLOAD_AND_BUILD_ARROW:BOOL=OFF \
-      -DRERUN_INSTALL_RERUN_C:BOOL=OFF
-
+      -DRERUN_INSTALL_RERUN_C:BOOL=OFF \
+      -DCMAKE_LINKER_TYPE:STRING=MOLD
 cmake --build . --config Release
 cmake --build . --config Release --target install
 
