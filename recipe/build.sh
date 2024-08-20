@@ -16,6 +16,12 @@ cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
 # The CI environment variable means something specific to Rerun. Unset it.
 unset CI
 
+if [[ "${target_platform}" == osx-* ]]; then
+  export CMAKE_LINKER_TYPE="LLD"
+else
+  export CMAKE_LINKER_TYPE="DEFAULT"
+fi
+
 mkdir build_cxx
 cd build_cxx
 
@@ -25,7 +31,7 @@ cmake ${CMAKE_ARGS} -GNinja .. \
       -DRERUN_ARROW_LINK_SHARED:BOOL=ON \
       -DRERUN_DOWNLOAD_AND_BUILD_ARROW:BOOL=OFF \
       -DRERUN_INSTALL_RERUN_C:BOOL=OFF \
-      -DCMAKE_LINKER_TYPE:STRING=MOLD
+      -DCMAKE_LINKER_TYPE:STRING=${CMAKE_LINKER_TYPE}
 cmake --build . --config Release
 cmake --build . --config Release --target install
 
