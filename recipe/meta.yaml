@@ -19,11 +19,12 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - cmake
+    - cmake >=3.29
     - pkg-config
     - ninja
     - cargo-bundle-licenses
     - {{ compiler('rust') }}
+    - mold  # [unix]
   host:
     - libarrow
   # Ensure that the users always instal the same version if it
