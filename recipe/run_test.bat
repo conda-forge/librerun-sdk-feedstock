@@ -1,6 +1,6 @@
 setlocal EnableDelayedExpansion
 
-cd cpp\minimal
+cd examples\cpp\minimal
 
 :: Compile example that links rerun
 cmake -GNinja -DCMAKE_BUILD_TYPE=Release .
