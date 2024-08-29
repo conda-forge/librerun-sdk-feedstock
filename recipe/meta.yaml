@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/{{ version }}.tar.gz
   sha256: d7f103a743a319d795b700e6c9c938ab180bf9e8ecb7d6e9f04b6003d0718aef
-  patches:
-    - 7246.patch
 
 build:
   number: 0
