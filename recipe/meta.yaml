@@ -1,5 +1,5 @@
 {% set name = "librerun-sdk" %}
-{% set version = "0.20.1" %}
+{% set version = "0.20.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c45d536daf58c6235188349619ded7e84fdbf9aed62e1aed535a4a65e0f65260
+  sha256: 4a84d2c79cefd9594348540ec1716cf58806676f6a279f2acc83779fc2158667
 
 build:
   number: 0
