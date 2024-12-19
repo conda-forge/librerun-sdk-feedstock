@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/{{ version }}.tar.gz
   sha256: 7c0feb6e9cc6b7f157d855e447692e7b1bdebbaa7b0c9020a04bc9ca96c0472f
+  patches:
+    - include-missing-header.patch
 
 build:
   number: 0
