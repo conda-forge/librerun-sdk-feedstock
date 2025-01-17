@@ -8,20 +8,17 @@ jobs:
     vmImage: macOS-13
   strategy:
     matrix:
-      osx_64_libarrow15:
-        CONFIG: osx_64_libarrow15
-        UPLOAD_PACKAGES: 'True'
       osx_64_libarrow16.1:
         CONFIG: osx_64_libarrow16.1
         UPLOAD_PACKAGES: 'True'
       osx_64_libarrow17.0:
         CONFIG: osx_64_libarrow17.0
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow18.1:
-        CONFIG: osx_64_libarrow18.1
+      osx_64_libarrow18.0:
+        CONFIG: osx_64_libarrow18.0
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_libarrow15:
-        CONFIG: osx_arm64_libarrow15
+      osx_64_libarrow19.0:
+        CONFIG: osx_64_libarrow19.0
         UPLOAD_PACKAGES: 'True'
       osx_arm64_libarrow16.1:
         CONFIG: osx_arm64_libarrow16.1
@@ -29,8 +26,11 @@ jobs:
       osx_arm64_libarrow17.0:
         CONFIG: osx_arm64_libarrow17.0
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_libarrow18.1:
-        CONFIG: osx_arm64_libarrow18.1
+      osx_arm64_libarrow18.0:
+        CONFIG: osx_arm64_libarrow18.0
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_libarrow19.0:
+        CONFIG: osx_arm64_libarrow19.0
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
