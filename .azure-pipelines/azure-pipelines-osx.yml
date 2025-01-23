@@ -14,8 +14,8 @@ jobs:
       osx_64_libarrow17.0:
         CONFIG: osx_64_libarrow17.0
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow18.0:
-        CONFIG: osx_64_libarrow18.0
+      osx_64_libarrow18.1:
+        CONFIG: osx_64_libarrow18.1
         UPLOAD_PACKAGES: 'True'
       osx_64_libarrow19.0:
         CONFIG: osx_64_libarrow19.0
@@ -26,8 +26,8 @@ jobs:
       osx_arm64_libarrow17.0:
         CONFIG: osx_arm64_libarrow17.0
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_libarrow18.0:
-        CONFIG: osx_arm64_libarrow18.0
+      osx_arm64_libarrow18.1:
+        CONFIG: osx_arm64_libarrow18.1
         UPLOAD_PACKAGES: 'True'
       osx_arm64_libarrow19.0:
         CONFIG: osx_arm64_libarrow19.0
