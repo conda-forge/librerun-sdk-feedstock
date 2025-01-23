@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 libarrow:
-- '18.0'
+- '18.1'
 rust_compiler:
 - rust
 rust_compiler_version:

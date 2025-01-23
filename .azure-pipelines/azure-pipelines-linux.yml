@@ -16,8 +16,8 @@ jobs:
         CONFIG: linux_64_libarrow17.0
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_libarrow18.0:
-        CONFIG: linux_64_libarrow18.0
+      linux_64_libarrow18.1:
+        CONFIG: linux_64_libarrow18.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_libarrow19.0:
@@ -32,8 +32,8 @@ jobs:
         CONFIG: linux_aarch64_libarrow17.0
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_libarrow18.0:
-        CONFIG: linux_aarch64_libarrow18.0
+      linux_aarch64_libarrow18.1:
+        CONFIG: linux_aarch64_libarrow18.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_libarrow19.0:
@@ -48,8 +48,8 @@ jobs:
         CONFIG: linux_ppc64le_libarrow17.0
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_ppc64le_libarrow18.0:
-        CONFIG: linux_ppc64le_libarrow18.0
+      linux_ppc64le_libarrow18.1:
+        CONFIG: linux_ppc64le_libarrow18.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_ppc64le_libarrow19.0:
