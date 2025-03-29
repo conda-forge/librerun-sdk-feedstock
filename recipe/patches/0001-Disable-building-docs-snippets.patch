@@ -1,0 +1,25 @@
+From 82fc8f50eebd328405674a602d42255bca06c90d Mon Sep 17 00:00:00 2001
+From: Jeongseok Lee <jeongseok@meta.com>
+Date: Fri, 28 Mar 2025 17:31:59 -0700
+Subject: [PATCH] Disable building docs/snippets
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 227a5407f6..24bdefa06d 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -167,7 +167,7 @@ add_subdirectory(crates/top/rerun_c) # The Rerun C SDK library, must be included
+ add_subdirectory(rerun_cpp) # The Rerun C++ SDK library.
+ add_subdirectory(examples/cpp)
+ add_subdirectory(tests/cpp)
+-add_subdirectory(docs/snippets)
++# add_subdirectory(docs/snippets)
+ 
+ # ------------------------------------------------------------------------------
+ # Setup an 'all_targets' target that depends on all targets in the project.
+-- 
+2.20.1.windows.1
+
