@@ -26,7 +26,8 @@ requirements:
     - {{ compiler('rust') }}
     - lld  # [osx]
   host:
-    - libarrow
+    # https://github.com/rerun-io/rerun/issues/9864
+    - libarrow <20.0
   # Ensure that the users always instal the same version if it
   # installs both librerun-sdk (C++) and rerun-sdk (Python)
   run_constrained:
