@@ -8,9 +8,12 @@ package:
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/{{ version }}.tar.gz
   sha256: bc4017c082f8b3adf483c92aea3bdbeab65d60017ad12db84922ade824afdb05
+  patches:
+    # https://github.com/rerun-io/rerun/pull/9966
+    - patches/0001-Use-arrow-MakeArray.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
 
@@ -26,8 +29,7 @@ requirements:
     - {{ compiler('rust') }}
     - lld  # [osx]
   host:
-    # https://github.com/rerun-io/rerun/issues/9864
-    - libarrow <20.0
+    - libarrow
   # Ensure that the users always instal the same version if it
   # installs both librerun-sdk (C++) and rerun-sdk (Python)
   run_constrained:

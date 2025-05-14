@@ -1,0 +1,34 @@
+From b0b03b395e397fc02b3335af21eea46d706d5776 Mon Sep 17 00:00:00 2001
+From: Jeongseok Lee <jeongseok@meta.com>
+Date: Wed, 14 May 2025 06:55:44 -0700
+Subject: [PATCH] Fix compatibility with arrow 20
+
+---
+ rerun_cpp/src/rerun/time_column.cpp | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/rerun_cpp/src/rerun/time_column.cpp b/rerun_cpp/src/rerun/time_column.cpp
+index 4a202a717f..a6cbe5182b 100644
+--- a/rerun_cpp/src/rerun/time_column.cpp
++++ b/rerun_cpp/src/rerun/time_column.cpp
+@@ -4,6 +4,7 @@
+ #include "c/rerun.h"
+
+ #include <arrow/array/array_base.h>
++#include <arrow/array/util.h>
+ #include <arrow/buffer.h>
+ #include <arrow/c/bridge.h>
+
+@@ -20,7 +21,9 @@ namespace rerun {
+         // which may or may not be another copy (if the collection already owns the data this is just a move).
+         auto length = static_cast<int64_t>(times.size());
+         auto buffer = arrow_buffer_from_vector(std::move(times).to_vector());
+-        array = std::make_shared<arrow::PrimitiveArray>(datatype, length, buffer);
++        auto buffers = std::vector<std::shared_ptr<arrow::Buffer>>{nullptr, buffer};
++        auto array_data = std::make_shared<arrow::ArrayData>(datatype, length, std::move(buffers));
++        array = arrow::MakeArray(array_data);
+     }
+
+     TimeColumn TimeColumn::from_seconds(
+--
+2.49.0.windows.1
