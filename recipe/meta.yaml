@@ -8,9 +8,6 @@ package:
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/{{ version }}.tar.gz
   sha256: 39a59f9b8deca7c9b21ef4ddac165c35c1e3705944310a608ff228fdd64dba30
-  patches:
-    # https://github.com/rerun-io/rerun/pull/9966
-    - patches/0001-Use-arrow-MakeArray.patch
 
 build:
   number: 0
