@@ -1,6 +1,10 @@
-package:
+context:
   name: librerun-sdk
   version: 0.25.1
+
+package:
+  name: ${{ name}}
+  version: ${{ version }}
 
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/0.25.1.tar.gz
@@ -8,17 +12,13 @@ source:
 
 build:
   number: 0
-  # Keep build logic in existing scripts. On Windows, rattler-build defaults to build.bat,
-  # so call the legacy bld.bat explicitly.
   script:
     - if: win
-      then: call "%RECIPE_DIR%\\bld.bat"
+      then: call "%RECIPE_DIR%\\build.bat"
     - if: unix
       then: bash "${RECIPE_DIR}/build.sh"
 
 requirements:
-  run_exports:
-    - ${{ pin_subpackage(name, upper_bound='x.x.x') }}
   build:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
@@ -34,8 +34,9 @@ requirements:
   host:
     - libarrow
   run_constraints:
-    - rerun-sdk ${{ version }}
-
+    - rerun-sdk ${{ version }}.*
+  run_exports:
+    - ${{ pin_subpackage(name, upper_bound='x.x.x') }}
 tests:
   - files:
       source:
