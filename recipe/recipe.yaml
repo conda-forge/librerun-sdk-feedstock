@@ -41,6 +41,9 @@ requirements:
     - ${{ pin_subpackage(name, upper_bound='x.x.x') }}
 tests:
   - files:
+      recipe:
+        - run_test.bat
+        - run_test.sh
       source:
         - examples/cpp
     requirements:
@@ -56,14 +59,14 @@ tests:
           - test -f "${PREFIX}/include/rerun.hpp"
           - test -f "${PREFIX}/lib/librerun_sdk${SHLIB_EXT}"
           - cmake-package-check rerun_sdk --targets rerun_sdk
-          - bash "${RECIPE_DIR}/run_test.sh"
+          - bash "run_test.sh"
       - if: win
         then:
           - if not exist "%LIBRARY_PREFIX%\\include\\rerun.hpp" exit 1
           - if not exist "%LIBRARY_PREFIX%\\lib\\rerun_sdk.lib" exit 1
           - if not exist "%LIBRARY_PREFIX%\\bin\\rerun_sdk.dll" exit 1
           - cmake-package-check rerun_sdk --targets rerun_sdk
-          - call "%RECIPE_DIR%\\run_test.bat"
+          - call "run_test.bat"
 
 about:
   homepage: https://www.rerun.io/
