@@ -21,7 +21,7 @@ libarrow:
 rust_compiler:
 - rust
 rust_compiler_version:
-- 1.85.0
+- 1.88.0
 target_platform:
 - linux-ppc64le
 zip_keys:

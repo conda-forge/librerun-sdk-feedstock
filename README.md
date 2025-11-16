@@ -15,7 +15,6 @@ Documentation: https://www.rerun.io/docs
 
 The `librerun-sdk` package provides the C++ API for Rerun, while `rerun-sdk` provides the Python API.
 
-
 Current build status
 ====================
 
