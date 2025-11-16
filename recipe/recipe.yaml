@@ -7,7 +7,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/rerun-io/rerun/archive/refs/tags/0.25.1.tar.gz
+  url: https://github.com/rerun-io/rerun/archive/refs/tags/${{ version }}.tar.gz
   sha256: 5a9b9fbe1eb1a75589890a372194c3b6e7e7b51f6c6547aba07d345ca9a49802
   patches:
     - 11751.patch
