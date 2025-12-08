@@ -1,6 +1,6 @@
 context:
   name: librerun-sdk
-  version: "0.27.2"
+  version: "0.27.3"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 54b3f70c613f350cd4bc8c50f670e3cbf41f338aa886c42ef96df0fb50f7c94f
+  sha256: e24dd5962d73c782539cc43509585629969f4efa9a0989125e3381176e73ac5d
 
 build:
   number: 0
