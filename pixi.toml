@@ -23,12 +23,6 @@ description = "List contents of all packages found in rattler-build build direct
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build librerun-sdk-feedstock directly (without setup scripts), no particular variant specified"
-[tasks."build-linux_64_libarrow19.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_libarrow19.0.yaml"
-description = "Build librerun-sdk-feedstock with variant linux_64_libarrow19.0 directly (without setup scripts)"
-[tasks."inspect-linux_64_libarrow19.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_libarrow19.0.yaml"
-description = "List contents of librerun-sdk-feedstock packages built for variant linux_64_libarrow19.0"
 [tasks."build-linux_64_libarrow20.0"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_libarrow20.0.yaml"
 description = "Build librerun-sdk-feedstock with variant linux_64_libarrow20.0 directly (without setup scripts)"
@@ -47,12 +41,12 @@ description = "Build librerun-sdk-feedstock with variant linux_64_libarrow22.0 d
 [tasks."inspect-linux_64_libarrow22.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_libarrow22.0.yaml"
 description = "List contents of librerun-sdk-feedstock packages built for variant linux_64_libarrow22.0"
-[tasks."build-linux_aarch64_libarrow19.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_libarrow19.0.yaml"
-description = "Build librerun-sdk-feedstock with variant linux_aarch64_libarrow19.0 directly (without setup scripts)"
-[tasks."inspect-linux_aarch64_libarrow19.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_libarrow19.0.yaml"
-description = "List contents of librerun-sdk-feedstock packages built for variant linux_aarch64_libarrow19.0"
+[tasks."build-linux_64_libarrow23.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_libarrow23.0.yaml"
+description = "Build librerun-sdk-feedstock with variant linux_64_libarrow23.0 directly (without setup scripts)"
+[tasks."inspect-linux_64_libarrow23.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_libarrow23.0.yaml"
+description = "List contents of librerun-sdk-feedstock packages built for variant linux_64_libarrow23.0"
 [tasks."build-linux_aarch64_libarrow20.0"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_libarrow20.0.yaml"
 description = "Build librerun-sdk-feedstock with variant linux_aarch64_libarrow20.0 directly (without setup scripts)"
@@ -71,12 +65,12 @@ description = "Build librerun-sdk-feedstock with variant linux_aarch64_libarrow2
 [tasks."inspect-linux_aarch64_libarrow22.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_libarrow22.0.yaml"
 description = "List contents of librerun-sdk-feedstock packages built for variant linux_aarch64_libarrow22.0"
-[tasks."build-linux_ppc64le_libarrow19.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_libarrow19.0.yaml"
-description = "Build librerun-sdk-feedstock with variant linux_ppc64le_libarrow19.0 directly (without setup scripts)"
-[tasks."inspect-linux_ppc64le_libarrow19.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_libarrow19.0.yaml"
-description = "List contents of librerun-sdk-feedstock packages built for variant linux_ppc64le_libarrow19.0"
+[tasks."build-linux_aarch64_libarrow23.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_libarrow23.0.yaml"
+description = "Build librerun-sdk-feedstock with variant linux_aarch64_libarrow23.0 directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_libarrow23.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_libarrow23.0.yaml"
+description = "List contents of librerun-sdk-feedstock packages built for variant linux_aarch64_libarrow23.0"
 [tasks."build-linux_ppc64le_libarrow20.0"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_libarrow20.0.yaml"
 description = "Build librerun-sdk-feedstock with variant linux_ppc64le_libarrow20.0 directly (without setup scripts)"
@@ -95,12 +89,12 @@ description = "Build librerun-sdk-feedstock with variant linux_ppc64le_libarrow2
 [tasks."inspect-linux_ppc64le_libarrow22.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_libarrow22.0.yaml"
 description = "List contents of librerun-sdk-feedstock packages built for variant linux_ppc64le_libarrow22.0"
-[tasks."build-osx_64_libarrow19.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_libarrow19.0.yaml"
-description = "Build librerun-sdk-feedstock with variant osx_64_libarrow19.0 directly (without setup scripts)"
-[tasks."inspect-osx_64_libarrow19.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_libarrow19.0.yaml"
-description = "List contents of librerun-sdk-feedstock packages built for variant osx_64_libarrow19.0"
+[tasks."build-linux_ppc64le_libarrow23.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_libarrow23.0.yaml"
+description = "Build librerun-sdk-feedstock with variant linux_ppc64le_libarrow23.0 directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_libarrow23.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_libarrow23.0.yaml"
+description = "List contents of librerun-sdk-feedstock packages built for variant linux_ppc64le_libarrow23.0"
 [tasks."build-osx_64_libarrow20.0"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_libarrow20.0.yaml"
 description = "Build librerun-sdk-feedstock with variant osx_64_libarrow20.0 directly (without setup scripts)"
@@ -119,12 +113,12 @@ description = "Build librerun-sdk-feedstock with variant osx_64_libarrow22.0 dir
 [tasks."inspect-osx_64_libarrow22.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_libarrow22.0.yaml"
 description = "List contents of librerun-sdk-feedstock packages built for variant osx_64_libarrow22.0"
-[tasks."build-osx_arm64_libarrow19.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_libarrow19.0.yaml"
-description = "Build librerun-sdk-feedstock with variant osx_arm64_libarrow19.0 directly (without setup scripts)"
-[tasks."inspect-osx_arm64_libarrow19.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_libarrow19.0.yaml"
-description = "List contents of librerun-sdk-feedstock packages built for variant osx_arm64_libarrow19.0"
+[tasks."build-osx_64_libarrow23.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_libarrow23.0.yaml"
+description = "Build librerun-sdk-feedstock with variant osx_64_libarrow23.0 directly (without setup scripts)"
+[tasks."inspect-osx_64_libarrow23.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_libarrow23.0.yaml"
+description = "List contents of librerun-sdk-feedstock packages built for variant osx_64_libarrow23.0"
 [tasks."build-osx_arm64_libarrow20.0"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_libarrow20.0.yaml"
 description = "Build librerun-sdk-feedstock with variant osx_arm64_libarrow20.0 directly (without setup scripts)"
@@ -143,12 +137,12 @@ description = "Build librerun-sdk-feedstock with variant osx_arm64_libarrow22.0 
 [tasks."inspect-osx_arm64_libarrow22.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_libarrow22.0.yaml"
 description = "List contents of librerun-sdk-feedstock packages built for variant osx_arm64_libarrow22.0"
-[tasks."build-win_64_libarrow19.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_libarrow19.0.yaml"
-description = "Build librerun-sdk-feedstock with variant win_64_libarrow19.0 directly (without setup scripts)"
-[tasks."inspect-win_64_libarrow19.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_libarrow19.0.yaml"
-description = "List contents of librerun-sdk-feedstock packages built for variant win_64_libarrow19.0"
+[tasks."build-osx_arm64_libarrow23.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_libarrow23.0.yaml"
+description = "Build librerun-sdk-feedstock with variant osx_arm64_libarrow23.0 directly (without setup scripts)"
+[tasks."inspect-osx_arm64_libarrow23.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_libarrow23.0.yaml"
+description = "List contents of librerun-sdk-feedstock packages built for variant osx_arm64_libarrow23.0"
 [tasks."build-win_64_libarrow20.0"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_libarrow20.0.yaml"
 description = "Build librerun-sdk-feedstock with variant win_64_libarrow20.0 directly (without setup scripts)"
@@ -167,6 +161,12 @@ description = "Build librerun-sdk-feedstock with variant win_64_libarrow22.0 dir
 [tasks."inspect-win_64_libarrow22.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_libarrow22.0.yaml"
 description = "List contents of librerun-sdk-feedstock packages built for variant win_64_libarrow22.0"
+[tasks."build-win_64_libarrow23.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_libarrow23.0.yaml"
+description = "Build librerun-sdk-feedstock with variant win_64_libarrow23.0 directly (without setup scripts)"
+[tasks."inspect-win_64_libarrow23.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_libarrow23.0.yaml"
+description = "List contents of librerun-sdk-feedstock packages built for variant win_64_libarrow23.0"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
