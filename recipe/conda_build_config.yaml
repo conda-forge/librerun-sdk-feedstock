@@ -3,7 +3,7 @@
 MACOSX_SDK_VERSION:  # [osx]
   - 15.5             # [osx]
 
-# Use the same version specified in https://github.com/rerun-io/rerun/blob/0.29.0/rust-toolchain#L8
+# Use the same version specified in https://github.com/rerun-io/rerun/blob/0.31.0/rust-toolchain#L8
 # (or the similar file in the current version)
 rust_compiler_version:
-  - 1.90.0
+  - 1.92.0
