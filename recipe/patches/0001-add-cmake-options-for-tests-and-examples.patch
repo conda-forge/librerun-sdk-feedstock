@@ -1,0 +1,56 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 6f041470d..5d7ea5be3 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -142,6 +142,10 @@ if(MSVC)
+     add_compile_options("/MP")
+ endif()
+ 
++option(RERUN_BUILD_EXAMPLES "Build C++ examples" ON)
++option(RERUN_BUILD_TESTS "Build C++ tests" ON)
++option(RERUN_BUILD_DOC_SNIPPETS "Build C++ documentation snippets" ON)
++
+ # Signal to all our build scripts that we're inside the Rerun repository.
+ set(RERUN_REPOSITORY YES)
+ 
+@@ -178,9 +182,15 @@ endif()
+ # ------------------------------------------------------------------------------
+ add_subdirectory(crates/top/rerun_c) # The Rerun C SDK library, must be included before the C++ SDK.
+ add_subdirectory(rerun_cpp) # The Rerun C++ SDK library.
+-add_subdirectory(examples/cpp)
+-add_subdirectory(tests/cpp)
+-add_subdirectory(docs/snippets)
++if(RERUN_BUILD_EXAMPLES)
++    add_subdirectory(examples/cpp)
++endif()
++if(RERUN_BUILD_TESTS)
++    add_subdirectory(tests/cpp)
++endif()
++if(RERUN_BUILD_DOC_SNIPPETS)
++    add_subdirectory(docs/snippets)
++endif()
+ 
+ # ------------------------------------------------------------------------------
+ # Setup an 'all_targets' target that depends on all targets in the project.
+diff --git a/rerun_cpp/CMakeLists.txt b/rerun_cpp/CMakeLists.txt
+index d9039a5e2..9ef0cfcb8 100644
+--- a/rerun_cpp/CMakeLists.txt
++++ b/rerun_cpp/CMakeLists.txt
+@@ -8,6 +8,8 @@ cmake_minimum_required(VERSION 3.16...3.27)
+ 
+ project(rerun_sdk LANGUAGES CXX)
+ 
++option(RERUN_BUILD_CPP_TESTS "Build Rerun C++ SDK tests" ON)
++
+ message("Compiler: ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION} (${CMAKE_CXX_COMPILER})")
+ 
+ set(RERUN_CPP_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src" CACHE PATH "Rerun include & source directory")
+@@ -231,6 +233,6 @@ install(FILES
+ 
+ # -----------------------------------------------------------------------------
+ # Add tests if they exist (they are not part of the distribution zip).
+ # Has direct dependency to arrow, so needs to happen last.
+-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/tests)
++if(RERUN_BUILD_CPP_TESTS AND EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/tests)
+     add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/tests)
+ endif()

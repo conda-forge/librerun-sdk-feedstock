@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/${{ version }}.tar.gz
   sha256: 046c3305ee7814f2b9105ab3dc65431951767200c79d73cadb78463caac9dd78
+  patches:
+    - patches/0001-add-cmake-options-for-tests-and-examples.patch
 
 build:
   number: 0
