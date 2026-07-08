@@ -1,6 +1,6 @@
 context:
   name: librerun-sdk
-  version: "0.34.0"
+  version: "0.34.1"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/rerun-io/rerun/archive/refs/tags/${{ version }}.tar.gz
-  sha256: e95e23ef3d17f494edd0188a824fa37ebc5d01726358502ac74b1e949f1aacef
+  sha256: 3c8e251659fc7c3f211c84597a499da39d6417be03841b53e083c5e5c9f3dbb3
   patches:
     - patches/0001-add-cmake-options-for-tests-and-examples.patch
 
