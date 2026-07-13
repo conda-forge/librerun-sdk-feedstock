@@ -13,7 +13,7 @@ source:
     - patches/0001-add-cmake-options-for-tests-and-examples.patch
 
 build:
-  number: 0
+  number: 1
   script:
     - if: win
       then: call "%RECIPE_DIR%\\build.bat"
