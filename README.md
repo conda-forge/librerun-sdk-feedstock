@@ -33,7 +33,7 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
             <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main">
           </a>
         </summary>
@@ -42,56 +42,56 @@ Current build status
           <tbody><tr>
               <td>osx_64_libarrow22.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow22.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_libarrow23.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow23.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_libarrow24.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow24.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_libarrow25.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow25.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_libarrow22.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow22.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_libarrow23.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow23.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_libarrow24.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow24.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_libarrow25.0</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21888&branchName=main">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/librerun-sdk-feedstock?branchName=main&jobName=win&configuration=win%20win_64_libarrow25.0" alt="variant">
                 </a>
               </td>
