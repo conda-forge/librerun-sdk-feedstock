@@ -11,6 +11,8 @@ set "CI="
 mkdir build_cxx
 cd build_cxx
 
+:: rerun_c became a public dependency in 0.36.0, so downstream consumers need its archive.
+:: https://github.com/rerun-io/rerun/commit/5fcb022f417eda4497ebe60285384543bb43ad5b
 cmake %CMAKE_ARGS% -GNinja .. ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DBUILD_SHARED_LIBS:BOOL=ON ^
@@ -20,7 +22,7 @@ cmake %CMAKE_ARGS% -GNinja .. ^
       -DRERUN_BUILD_DOC_SNIPPETS:BOOL=OFF ^
       -DRERUN_BUILD_EXAMPLES:BOOL=OFF ^
       -DRERUN_BUILD_TESTS:BOOL=OFF ^
-      -DRERUN_INSTALL_RERUN_C:BOOL=OFF ^
+      -DRERUN_INSTALL_RERUN_C:BOOL=ON ^
       -DCMAKE_FIND_PACKAGE_TARGETS_GLOBAL:BOOL=ON 
 if errorlevel 1 exit 1
 
