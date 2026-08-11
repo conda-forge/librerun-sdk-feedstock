@@ -58,6 +58,7 @@ tests:
         then:
           - test -f "${PREFIX}/include/rerun.hpp"
           - test -f "${PREFIX}/lib/librerun_sdk${SHLIB_EXT}"
+          - test -f "${PREFIX}/lib/librerun_c.a"
           - cmake-package-check rerun_sdk --targets rerun_sdk
           - bash "run_test.sh"
       - if: win
@@ -65,6 +66,7 @@ tests:
           - if not exist "%LIBRARY_PREFIX%\\include\\rerun.hpp" exit 1
           - if not exist "%LIBRARY_PREFIX%\\lib\\rerun_sdk.lib" exit 1
           - if not exist "%LIBRARY_PREFIX%\\bin\\rerun_sdk.dll" exit 1
+          - if not exist "%LIBRARY_PREFIX%\\lib\\rerun_c.lib" exit 1
           - cmake-package-check rerun_sdk --targets rerun_sdk
           - call "run_test.bat"
 
