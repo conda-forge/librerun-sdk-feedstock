@@ -51,7 +51,7 @@ jobs:
       osx_arm64_libarrow22.0:
         CONFIG: osx_arm64_libarrow22.0
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
+        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
@@ -61,7 +61,7 @@ jobs:
       osx_arm64_libarrow23.0:
         CONFIG: osx_arm64_libarrow23.0
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
+        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
@@ -71,7 +71,7 @@ jobs:
       osx_arm64_libarrow24.0:
         CONFIG: osx_arm64_libarrow24.0
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
+        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
@@ -81,7 +81,7 @@ jobs:
       osx_arm64_libarrow25.0:
         CONFIG: osx_arm64_libarrow25.0
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
+        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
