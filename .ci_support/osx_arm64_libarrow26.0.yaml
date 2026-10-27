@@ -17,7 +17,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '21'
 libarrow:
-- '22.0'
+- '26.0'
 macos_machine:
 - arm64-apple-darwin20.0.0
 rust_compiler:
